@@ -171,6 +171,8 @@
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="WebForm\DownloadVideo.aspx" />
+    <Content Include="WebForm\DrmCallback.aspx" />
+    <Content Include="WebForm\LmsCallback.aspx" />
     <Content Include="WebForm\PlayCallback.aspx" />
     <Content Include="WebForm\PlayVideo.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -207,6 +209,7 @@
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
     <Content Include="WebForm\web.config" />
+    <Content Include="WebForm\lms.log" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -221,6 +224,20 @@
     </Compile>
     <Compile Include="WebForm\DownloadVideo.aspx.designer.cs">
       <DependentUpon>DownloadVideo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\DrmCallback.aspx.cs">
+      <DependentUpon>DrmCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\DrmCallback.aspx.designer.cs">
+      <DependentUpon>DrmCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\LmsCallback.aspx.cs">
+      <DependentUpon>LmsCallback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\LmsCallback.aspx.designer.cs">
+      <DependentUpon>LmsCallback.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm\PlayCallback.aspx.cs">
       <DependentUpon>PlayCallback.aspx</DependentUpon>
@@ -261,6 +278,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ClassicASP\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
