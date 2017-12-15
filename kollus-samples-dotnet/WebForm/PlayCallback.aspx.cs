@@ -12,7 +12,7 @@ using System.Web.UI.WebControls;
 
 namespace kollus_samples_dotnet.Views
 {
-    public partial class play_callback : System.Web.UI.Page
+    public partial class PlayCallback : System.Web.UI.Page
     {
         private readonly String CUID = "test";
         private readonly int expMinutes = 5;

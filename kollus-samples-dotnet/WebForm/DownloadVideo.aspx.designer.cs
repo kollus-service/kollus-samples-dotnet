@@ -10,7 +10,7 @@
 namespace kollus_samples_dotnet {
     
     
-    public partial class play {
+    public partial class DownloadVideo {
         
         /// <summary>
         /// wPlayer 컨트롤입니다.

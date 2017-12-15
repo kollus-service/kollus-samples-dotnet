@@ -170,8 +170,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Views\play-callback.aspx" />
-    <Content Include="Views\play-video.aspx" />
+    <Content Include="WebForm\DownloadVideo.aspx" />
+    <Content Include="WebForm\PlayCallback.aspx" />
+    <Content Include="WebForm\PlayVideo.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -205,7 +206,7 @@
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="Site.Mobile.Master" />
-    <Content Include="Views\web.config" />
+    <Content Include="WebForm\web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -214,19 +215,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Views\play-callback.aspx.cs">
-      <DependentUpon>play-callback.aspx</DependentUpon>
+    <Compile Include="WebForm\DownloadVideo.aspx.cs">
+      <DependentUpon>DownloadVideo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\play-callback.aspx.designer.cs">
-      <DependentUpon>play-callback.aspx</DependentUpon>
+    <Compile Include="WebForm\DownloadVideo.aspx.designer.cs">
+      <DependentUpon>DownloadVideo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Views\play-video.aspx.cs">
-      <DependentUpon>play-video.aspx</DependentUpon>
+    <Compile Include="WebForm\PlayCallback.aspx.cs">
+      <DependentUpon>PlayCallback.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Views\play-video.aspx.designer.cs">
-      <DependentUpon>play-video.aspx</DependentUpon>
+    <Compile Include="WebForm\PlayCallback.aspx.designer.cs">
+      <DependentUpon>PlayCallback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm\PlayVideo.aspx.cs">
+      <DependentUpon>PlayVideo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm\PlayVideo.aspx.designer.cs">
+      <DependentUpon>PlayVideo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

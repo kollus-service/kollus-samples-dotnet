@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="play-callback.aspx.cs" Inherits="kollus_samples_dotnet.Views.play_callback" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PlayCallback.aspx.cs" Inherits="kollus_samples_dotnet.Views.PlayCallback" %>
 
 <!DOCTYPE html>
 

@@ -11,7 +11,7 @@ using System.Web.UI.WebControls;
 
 namespace kollus_samples_dotnet
 {
-    public partial class play : System.Web.UI.Page
+    public partial class PlayVideo : System.Web.UI.Page
     {
         private readonly string customKey = "1ba769ae9972603d72658b8566dc4fa2e5782dcfede54c527831b70f4aa9d7f3";
         private readonly string secretKey = "hdyang2";
