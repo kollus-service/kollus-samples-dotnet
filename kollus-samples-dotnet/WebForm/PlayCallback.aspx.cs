@@ -17,6 +17,7 @@ namespace kollus_samples_dotnet.Views
         private readonly String CUID = "test";
         private readonly int expMinutes = 5;
         private readonly String secretKey = "hdyang";
+        private readonly String userKey = "";
 
         private String encodeBase64Safe(String src)
         {
@@ -72,11 +73,14 @@ namespace kollus_samples_dotnet.Views
                     case 3:
                         break;
                 }
-                sb.Append(createToken(payload.ToString()));
+                JObject data = JObject.FromObject(new { data = payload });
+                sb.Append(createToken(data.ToString()));
             }
 
 
             Debug.Write(sb.ToString());
+            Response.StatusCode = 200;
+            Response.AddHeader("X-Kollus-UserKey",userKey);
             Response.Write(sb.ToString());
             Response.End();
         }
