@@ -49,7 +49,7 @@ namespace kollus_samples_dotnet
         }
         protected void Page_Load(object sender, EventArgs e)
         {
-            Int64 exp = (Int64)DateTime.Now.AddMinutes(expiredTime).Subtract(new DateTime(1970, 1, 1)).TotalMilliseconds;
+            Int64 exp = (Int64)DateTime.Now.AddMinutes(expiredTime).Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
             var payload = JObject.FromObject(new { cuid = cuid, expt = exp });
             mcKeys.Add("Qils7XzI");
             JArray mcs = new JArray();
